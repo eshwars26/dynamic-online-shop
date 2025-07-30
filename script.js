@@ -3,25 +3,25 @@ const products = [
     id: 1,
     name: "T-Shirt",
     price: 499,
-    image: "https://via.placeholder.com/200x150.png?text=T-Shirt"
+    image: "d:\Eshwar\online-shopping\t-shirt.jpg"
   },
   {
     id: 2,
     name: "Shoes",
     price: 1299,
-    image: "https://via.placeholder.com/200x150.png?text=Shoes"
+    image: "d:\Eshwar\online-shopping\shoes.jpg"
   },
   {
     id: 3,
     name: "Watch",
     price: 1999,
-    image: "https://via.placeholder.com/200x150.png?text=Watch"
+    image: "d:\Eshwar\online-shopping\watch.jpg"
   },
   {
     id: 4,
     name: "Backpack",
     price: 799,
-    image: "https://via.placeholder.com/200x150.png?text=Backpack"
+    image: "d:\Eshwar\online-shopping\backpack.jpg"
   }
 ];
 
@@ -58,7 +58,7 @@ function updateCart() {
 
   cart.forEach(item => {
     const li = document.createElement("li");
-    li.textContent = ${item.name} - ₹${item.price};
+    li.textContent = `${item.name} - ₹${item.price}`;
     cartItems.appendChild(li);
     total += item.price;
   });
