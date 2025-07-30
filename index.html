@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dynamic Online Shop</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="pt-5 pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1>eshwar</h1>
-                </div>
-            </div>
-        </div>
-    </div>
+  <header>
+    <h1>🛒 Dynamic Shop</h1>
+    <div class="cart" onclick="toggleCart()">🛍 Cart (<span id="cartCount">0</span>)</div>
+  </header>
+
+  <main id="productContainer">
+    <!-- JavaScript will populate this -->
+  </main>
+
+  <section id="cartContainer" class="hidden">
+    <h2>Cart Summary</h2>
+    <ul id="cartItems"></ul>
+    <p>Total: ₹<span id="totalPrice">0</span></p>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
